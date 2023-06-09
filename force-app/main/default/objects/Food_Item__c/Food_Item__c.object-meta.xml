@@ -150,7 +150,7 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
@@ -160,6 +160,14 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Food Items</pluralLabel>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>Description__c</fields>
+        <fields>Cost__c</fields>
+        <fields>Dietary_Restrictions__c</fields>
+        <fields>Spicy__c</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
