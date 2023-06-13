@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <h1>Order Details</h1>
+        <p>Build Your Order Below:</p>
+        <template for:each={orderItems} for:item="orderItem">
+            <p key={orderItem.id}>{orderItem.quantity}</p>
+        </template>
+    </lightning-card>
+</template>
