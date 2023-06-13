@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Food Order</label>
     <nameField>
+        <displayFormat>O-{0000}</displayFormat>
         <label>Order Number</label>
         <type>AutoNumber</type>
     </nameField>
