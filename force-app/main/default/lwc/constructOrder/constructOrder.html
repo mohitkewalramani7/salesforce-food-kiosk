@@ -2,8 +2,18 @@
     <lightning-card>
         <h1>Order Details</h1>
         <p>Build Your Order Below:</p>
+        <lightning-button variant="brand" label="Add Item" class="slds-m-left_x-small"></lightning-button>
         <template for:each={orderItems} for:item="orderItem">
-            <p key={orderItem.id}>{orderItem.quantity}</p>
+            <div key={orderItem.id}>
+                <lightning-combobox
+                    name="progress"
+                    label="Menu Item"
+                    value={value}
+                    placeholder="Select Progress"
+                    options={menuItems}>
+                </lightning-combobox>
+                <p>Selected value is: {value}</p>
+            </div>
         </template>
     </lightning-card>
 </template>
